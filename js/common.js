@@ -16,3 +16,18 @@ function disableButton(buttonId){
     buttonElement.style.backgroundColor = '#F5F5DC';
     
 }
+
+function getValueFromInputField(inputFieldId){
+    const inputFieldElement = document.getElementById(inputFieldId);
+    const inpurFieldStringValue = inputFieldElement.value;
+    const inputFieldValue = parseFloat(inpurFieldStringValue);
+    return inputFieldValue;
+}
+
+function totalPlayerCost(){
+    const perPlayerCost = getValueFromInputField('per-player-cost-input-field');
+    const playerCostSum = perPlayerCost * 5;
+    const totalPlayerCostElement = document.getElementById('total-player-cost-element');
+    totalPlayerCostElement.innerText = playerCostSum;
+    return playerCostSum;
+}
