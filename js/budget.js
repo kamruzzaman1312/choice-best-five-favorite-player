@@ -13,6 +13,4 @@ document.getElementById('total-cost-calculate-button').addEventListener('click',
 
     const totalCostElement = document.getElementById('total-cost-element');
     totalCostElement.innerText = toalCost;
-
-
  })

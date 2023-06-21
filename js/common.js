@@ -1,3 +1,11 @@
+function isSelectionFunction(){
+    const selectedNameContainer = document.getElementById('selected-name-container');
+    const selectedNameAmount = selectedNameContainer.childNodes.length-1;
+    if(selectedNameAmount < 5){
+        return true;
+    }
+} 
+
 function playerSelection(playerId){
     const playerNameElement = document.getElementById(playerId);
     const playerName = playerNameElement.innerText;
